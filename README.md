@@ -1,4 +1,4 @@
-# ml_experiments
+# ml_experiments "Low error, Pop champagne"
 Small machine learning experiments
 
 
