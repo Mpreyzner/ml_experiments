@@ -43,7 +43,7 @@ for j in xrange(num_epochs):
 	#how much l2 contributes to l2 error
 	l1_error = l2_delta.dot(syn1.T)
 	l1_delta = l1_error * nonlin(l1, deriv=True)
-
+	#update wieghts
 	syn1 += l1.T.dot(l2_delta)
 	syn0 += l0.T.dot(l1_delta)
 
