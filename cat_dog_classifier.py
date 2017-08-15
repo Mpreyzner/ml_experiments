@@ -10,15 +10,15 @@ validation_data = load_data('data/validation')
 
 model = Sequential()
 
-model.add(Convolution2d(32,3,3 input_shape=(img_width, img_height, 3)))
+model.add(Convolution2d(32,(3,3), input_shape=(img_width, img_height, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 
-model.add(Convolution2d(32,3,3 input_shape=(img_width, img_height, 3)))
+model.add(Convolution2d(32,(3,3), input_shape=(img_width, img_height, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 
-model.add(Convolution2d(32,3,3 input_shape=(img_width, img_height, 3)))
+model.add(Convolution2d(32,(3,3), input_shape=(img_width, img_height, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 
